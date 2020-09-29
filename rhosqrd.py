@@ -30,7 +30,6 @@ class QEnv:
     query_string = []
 
     def __init__(self):
-        """WARNING!!! This is the admin URL. Do not deploy in this form!!!"""
         self.engine = create_engine('postgresql://fritav_remote_user:Qc6o52n6H@134.76.10.93:5432/fritav')
         self.connection = self.engine.connect()
         self.metadata = MetaData()
